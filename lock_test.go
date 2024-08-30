@@ -1,14 +1,15 @@
-package redis_lock
+package redislock
 
 import (
 	"context"
 	"errors"
-	"github.com/redis/go-redis/v9"
-	"github.com/stretchr/testify/assert"
-	"go.uber.org/mock/gomock"
 	"redis-lock/mocks"
 	"testing"
 	"time"
+
+	"github.com/redis/go-redis/v9"
+	"github.com/stretchr/testify/assert"
+	"go.uber.org/mock/gomock"
 )
 
 func TestClient_TryLock(t *testing.T) {

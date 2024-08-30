@@ -1,14 +1,15 @@
-package redis_lock
+package redislock
 
 import (
 	"context"
 	_ "embed"
 	"errors"
 	"fmt"
+	"time"
+
 	"github.com/google/uuid"
 	"github.com/redis/go-redis/v9"
 	"golang.org/x/sync/singleflight"
-	"time"
 )
 
 var (

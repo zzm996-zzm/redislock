@@ -1,12 +1,13 @@
-package redis_lock
+package redislock
 
 import (
 	"context"
+	"testing"
+	"time"
+
 	"github.com/redis/go-redis/v9"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"testing"
-	"time"
 )
 
 func TestClient_TryLock_E2E(t *testing.T) {

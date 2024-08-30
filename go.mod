@@ -1,4 +1,4 @@
-module redis-lock
+module redislock
 
 go 1.22.3
 
